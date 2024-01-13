@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545656616535",
+    "project_id": "movierecomm-9257b",
+    "storage_bucket": "movierecomm-9257b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545656616535:android:d1e898709acf3882e8d512",
+        "android_client_info": {
+          "package_name": "com.example.movierecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Yud-wJ_QU20b51TZgMs9sJAPGbRhOjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
