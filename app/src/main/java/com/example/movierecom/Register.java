@@ -49,7 +49,7 @@ public class Register extends AppCompatActivity {
         RegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progressBar.setVisibility(View.VISIBLE);
+//                progressBar.setVisibility(View.VISIBLE);
                 String email, password, name;
                 email = String.valueOf(Email.getText());
                 password = String.valueOf(Pswd.getText());

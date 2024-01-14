@@ -24,7 +24,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
 //    Button Login, RegisterBtn, googleSignIn, Guest;
     Button Login, googleSignIn, Guest;
-    EditText RegisterBtn;
+//    EditText RegisterBtn;
+    Button RegisterBtn;
     EditText Email, Pswd;
     ProgressBar progressBar;
     FirebaseAuth mAuth;
@@ -100,6 +101,7 @@ public class Login extends AppCompatActivity {
                                     }
                                 }
                             });
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });
