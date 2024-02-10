@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
         Email = findViewById(R.id.emailR);
         Name = findViewById(R.id.nameR);
         Pswd = findViewById(R.id.passwordR);
-    loading = findViewById(R.id.load);
+        loading = findViewById(R.id.load);
         cv = findViewById(R.id.cardView);
 
         RegisterBtn.setOnClickListener(new View.OnClickListener() {

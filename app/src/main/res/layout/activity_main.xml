@@ -21,39 +21,41 @@
         app:layout_constraintVertical_bias="0.036" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="355dp"
-        android:layout_height="318dp"
+        android:layout_width="388dp"
+        android:layout_height="162dp"
         app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userView">
+        app:layout_constraintTop_toBottomOf="@+id/userView"
+        app:layout_constraintVertical_bias="0.0">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="320dp"
-            android:layout_height="69dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.542"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.244">
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:layout_width="320dp"-->
+        <!--            android:layout_height="69dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.542"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.244">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nameR"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:drawableStart="@drawable/name"
-                android:drawablePadding="10dp"
-                android:editable="false"
-                android:hint="Name"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.496"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.189" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/nameR"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="60dp"-->
+        <!--                android:drawableStart="@drawable/name"-->
+        <!--                android:drawablePadding="10dp"-->
+        <!--                android:editable="false"-->
+        <!--                android:hint="Name"-->
+        <!--                android:inputType="textPersonName"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.496"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:layout_constraintVertical_bias="0.189" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="320dp"
@@ -81,15 +83,43 @@
 
     <Button
         android:id="@+id/logout"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="190dp"
         android:layout_height="67dp"
-        style="@style/Widget.Material3.Button.OutlinedButton"
         android:text="Logout"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.364" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:text="Search"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieName"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <EditText
+        android:id="@+id/movieName"
+        android:layout_width="365dp"
+        android:hint="Search for Movie"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        style="@style/TextAppearance.Material3.SearchBar"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
