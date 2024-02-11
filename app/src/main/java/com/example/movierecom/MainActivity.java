@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView welcome;
     FirebaseUser currentUser;
-    private final String url = "http://www.omdbapi.com/?t=";
-    private final String t = "t=";
-    private final String apiKey = "&apikey=c6ac6a3d";
+//    private final String url = "http://www.omdbapi.com/?t=";
+//    private final String t = "t=";
+//    private final String apiKey = "&apikey=c6ac6a3d";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,26 +59,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String movie = Movie.getText().toString().trim();
-                String tempUrl = null;
                 if(movie.isEmpty()){
                     Toast.makeText(MainActivity.this, "Cannot keep search blank", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    tempUrl = url + t + movie + apiKey;
+                    Intent intent = new Intent(MainActivity.this, Result.class);
+                    intent.putExtra("name",movie);
+                    startActivity(intent);
                 }
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, tempUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d("response",response);
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-                requestQueue.add(stringRequest);
             }
         });
         Logout.setOnClickListener(new View.OnClickListener() {
